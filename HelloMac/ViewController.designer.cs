@@ -15,6 +15,9 @@ namespace HelloMac
 		[Outlet]
 		AppKit.NSTextField ClickedLabel { get; set; }
 
+		[Outlet]
+		AppKit.NSTextField ThankYouLabel { get; set; }
+
 		[Action ("ClickedButton:")]
 		partial void ClickedButton (Foundation.NSObject sender);
 		
@@ -23,6 +26,11 @@ namespace HelloMac
 			if (ClickedLabel != null) {
 				ClickedLabel.Dispose ();
 				ClickedLabel = null;
+			}
+
+			if (ThankYouLabel != null) {
+				ThankYouLabel.Dispose ();
+				ThankYouLabel = null;
 			}
 		}
 	}

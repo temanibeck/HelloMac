@@ -702,17 +702,32 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="o9s-iT-OwN">
+                                <rect key="frame" x="68" y="192" width="354" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="xfA-3w-THL"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ThankYouLabel" id="0ci-bU-00P">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="o9s-iT-OwN" firstAttribute="top" secondItem="8uA-BX-WPW" secondAttribute="bottom" constant="20" id="5L6-fw-Nhf"/>
                             <constraint firstItem="8uA-BX-WPW" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="23" id="Csc-IF-JaV"/>
                             <constraint firstItem="xhU-r0-zj1" firstAttribute="leading" secondItem="8uA-BX-WPW" secondAttribute="trailing" constant="10" id="Kty-qN-nAj"/>
+                            <constraint firstItem="o9s-iT-OwN" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="70" id="MCe-ll-Zey"/>
                             <constraint firstItem="xhU-r0-zj1" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="22" id="W4t-lj-N4J"/>
+                            <constraint firstAttribute="trailing" secondItem="o9s-iT-OwN" secondAttribute="trailing" constant="60" id="bIK-7q-17a"/>
                             <constraint firstAttribute="trailing" secondItem="xhU-r0-zj1" secondAttribute="trailing" constant="20" id="efy-j4-FkR"/>
                             <constraint firstItem="8uA-BX-WPW" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="j8s-oi-EBp"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ClickedLabel" destination="xhU-r0-zj1" id="SHt-la-L30"/>
+                        <outlet property="ThankYouLabel" destination="o9s-iT-OwN" id="QdW-98-ymo"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
