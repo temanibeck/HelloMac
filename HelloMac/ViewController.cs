@@ -20,7 +20,7 @@ namespace HelloMac
             // Set the initial value for the label
             ClickedLabel.StringValue = "Button has not been clicked yet.";
 
-            ThankYouLabel.StringValue = "Thank you for participating.";
+            ThankYouLabel.StringValue = "Thank you for participating!";
         }
 
         partial void ClickedButton(NSObject sender)
